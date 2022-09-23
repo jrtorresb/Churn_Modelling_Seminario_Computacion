@@ -5,4 +5,4 @@ Proyecto Churn Modelling para el Seminario de Ciencias de la Computación Facult
 ## Puesta en Producción de un modelo de aprendizaje automático con Flask y Heroku
 
 
-![Portada](images/ciencias.png)
+![Portada](images/ciencias.PNG)
