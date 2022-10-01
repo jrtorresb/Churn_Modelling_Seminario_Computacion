@@ -1,24 +1,80 @@
 <html>
+
+<head>
+
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+
+
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: red;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+} 
+  
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+</style>
+</head>
+
+
+
 <body>
     <h3>Modelo Predictivo basado en el Dataset Iris</h3>
 
 <div>
   <form action="/result" method="POST">
     <label for="sepal_length">sepal length in cm: </label>
-    <input type="text" id="sepal_length" name="sepal_length">
+    <input type="text" id="sepal_length" name="sepal_length" required="required">
     <br>
     <label for="sepal_width">sepal width in cm: </label>
-    <input type="text" id="sepal_width" name="sepal_width">
+    <input type="text" id="sepal_width" name="sepal_width" required="required">
     <br>
     <label for="petal_length">petal length in cm: </label>
-    <input type="text" id="petal_length" name="petal_length">
+    <input type="text" id="petal_length" name="petal_length" required="required">
     <br>
     <label for="petal_width">petal width in cm: </label>
-    <input type="text" id="petal_width" name="petal_width">
+    <input type="text" id="petal_width" name="petal_width" required="required">
     <br>
     <br>
     <input type="submit" value="Submit">
   </form>
 </div>
+
+<div class="footer">
+  <p>Roberto Torres</p>
+</div>
+
 </body>
 </html>
