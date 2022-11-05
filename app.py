@@ -16,12 +16,12 @@ def index():
 
 @app.route('/health', methods=['GET'])
 def health():
-    return jsonify({"STATUS":"UP"})
+    return jsonify({"STATUS": "UP"})
 
 
 def ValuePredictor(to_predict_list):
     to_predict = np.array(to_predict_list).reshape(1, 4)
-    loaded_model = pickle.load(open("checkpoints/model.pkl","rb"))
+    loaded_model = pickle.load(open("api/model.pkl", "rb"))
     result = loaded_model.predict(to_predict)
     return result[0]
 
@@ -48,5 +48,4 @@ def result():
 
 
 if __name__=="__main__":
-
-    app.run(port=5001)
+    app.run(debug=True, host='127.0.0.1', port=5000)

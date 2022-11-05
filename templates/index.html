@@ -1,8 +1,12 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-
+<meta charset="utf-8">
+    <title>Red Neuronal</title>
+    <link rel="shortcut icon" href="../images/learn.ico">
 <style>
+
 body {
   margin: 0;
   font-size: 28px;
@@ -18,8 +22,6 @@ body {
    text-align: center;
 }
 
-
-
 .button {
   background-color: #4CAF50; /* Green */
   border: none;
@@ -28,9 +30,20 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-} 
+  font-size: 100%;
+}
+
+input, textarea, select, button {
+  width : 80px;
+  padding: 3;
+  margin: 10;
+  box-sizing: border-box;
+}
   
+label{
+  display: inline-block;
+  width: 210px;
+}
 
 .content {
   padding: 16px;
@@ -51,21 +64,39 @@ body {
 
 
 <body>
-    <h3>Modelo Predictivo basado en el Dataset Iris</h3>
+    <h3>Modelo Predictivo Tasa de Abandono de Clientes</h3>
 
 <div>
   <form action="/result" method="POST">
-    <label for="sepal_length">sepal length in cm: </label>
-    <input type="text" id="sepal_length" name="sepal_length" required="required">
+    <label for="CreditScore">Credit Score: </label>
+    <input type="text" id="CreditScore" name="CreditScore" required="required">
     <br>
-    <label for="sepal_width">sepal width in cm: </label>
-    <input type="text" id="sepal_width" name="sepal_width" required="required">
+    <label for="Geography">Geography: </label>
+    <input type="text" id="Geography" name="Geography" required="required">
     <br>
-    <label for="petal_length">petal length in cm: </label>
-    <input type="text" id="petal_length" name="petal_length" required="required">
+    <label for="Gender">Gender: </label>
+    <input type="text" id="Gender" name="Gender" required="required">
     <br>
-    <label for="petal_width">petal width in cm: </label>
-    <input type="text" id="petal_width" name="petal_width" required="required">
+    <label for="Age">Age: </label>
+    <input type="text" id="Age" name="Age" required="required">
+    <br>
+    <label for="Tenure">Tenure: </label>
+    <input type="text" id="Tenure" name="Tenure" required="required">
+    <br>
+    <label for="Balance">Balance: </label>
+    <input type="text" id="Balance" name="Balance" required="required">
+    <br>
+    <label for="NumOfProducts">NumOfProducts: </label>
+    <input type="text" id="NumOfProducts" name="NumOfProducts" required="required">
+    <br>
+    <label for="HasCrCard">HasCrCard: </label>
+    <input type="text" id="HasCrCard" name="HasCrCard" required="required">
+    <br>
+    <label for="IsActiveMember">IsActiveMember: </label>
+    <input type="text" id="IsActiveMember" name="IsActiveMember" required="required">
+    <br>
+    <label for="EstimatedSalary">EstimatedSalary: </label>
+    <input type="text" id="EstimatedSalary" name="EstimatedSalary" required="required">
     <br>
     <br>
     <input type="submit" value="Submit">
