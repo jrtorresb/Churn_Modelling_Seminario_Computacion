@@ -40,9 +40,9 @@ def result():
             #to_predict_list = list(map(float, to_predict_list))
             result = ValuePredictor(to_predict_list)
             if int(result) == 0:
-                prediction = 'Es probable que el cliente no abandone la institución'
+                prediction = 'The client is not likely to leave the institution'
             elif int(result) == 1:
-                prediction = '¡URGENTE!  Es probable que el cliente abandone la institución'
+                prediction = 'WARNING!  The client is likely to leave the institution'
             else:
                 prediction=f'{int(result)} No-definida'
         except ValueError:
